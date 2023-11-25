@@ -1,19 +1,6 @@
-import { cards } from "./utils/questions.js";
 import { Header } from "./components/Header/Header.js";
 import { Form } from "./components/Form/Form.js";
-import { Card } from "./components/Card/Card.js";
-
-function CardList() {
-  const cardList = document.createElement("section");
-  cardList.classList.add("card-list");
-
-  cards.forEach((card) => {
-    const cardElement = Card(card);
-    cardList.append(cardElement);
-  });
-
-  return cardList;
-}
+import { CardList } from "./components/CardList/CardList.js";
 
 function App() {
   const app = document.createElement("main");
